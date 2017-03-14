@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee|Bungee+Inline|Montserrat|Varela+Round');
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
 body {
-    font-family: consolas, helvetica, sans-serif;
+    font-family: 'Montserrat', helvetica, sans-serif;
     font-size: 12px;
     margin: auto;
 }
@@ -15,7 +17,107 @@ body, a:hover {
 
 body, footer {
     width: 1050px;
-    background-color: #EAC324;
+    background-color: #ffffff;;
+}
+
+/* LANDING PAGE */
+#landPG {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/header_02.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+#enter, h2, p {
+  text-align: center;
+}
+
+#enter, h2 {
+  padding-top: 100px;
+  width: 100%;
+  font-size: 40px;
+}
+
+#enter {
+  display: block;
+  cursor: pointer;
+  font-family: 'Bungee';
+  color: #000000;
+}
+
+figure {
+  background-color: #5438c4;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+
+section {
+  width: 1000px;
+  margin: auto;
+}
+
+div {
+  background-color: #ffffff;
+  width: 300px;
+  height: 400px;
+  float: left;
+  margin: 10px;
+  border: 4px solid #ffffff;
+  transition: all 0.5s ease-in-out;
+}
+
+div:hover {
+  background-color: #ffffff;
+  border: 4px solid #cccccc;
+}
+
+#artStuff section:first-child div {
+}
+
+#whiteRoom, #artStuff, #artPop, #memories, #memPop  {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+#whiteRoom, #artStuff, #artPop, #memories, #memPop {
+  display: none;
+}
+
+#artStuff, #artPop {
+  background-color: pink;
+}
+
+#artPop h2, #memPop h2, p {
+  width: 300px;
+  margin-left: 600px;
+}
+
+#artPop h2 {
+  margin-top: 50px;
+}
+
+#artPop div {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  width: 500px;
+  height: 530px;
+}
+
+#memPop h2 {
+  margin-top: 250px;
+  border-left: 5px solid #000000;
 }
 
 footer {
@@ -26,4 +128,14 @@ footer {
     height: 20px;
     font-size:10px;
     text-align: center;
+    text-transform: uppercase;
+}
+
+footer a {
+    color: #515151;
+    text-decoration: none;
+}
+
+#refresh, div:nth-child(1), #whiteRoom div:nth-child(2) {
+  cursor: pointer;
 }
