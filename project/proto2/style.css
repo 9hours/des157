@@ -145,6 +145,6 @@ footer a {
   text-decoration: none;
 }
 
-#refresh, div:nth-child(1), #whiteRoom div:nth-child(2) {
+#back, #refresh, div:nth-child(1), #whiteRoom div:nth-child(2) {
   cursor: pointer;
 }

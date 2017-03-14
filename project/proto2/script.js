@@ -41,5 +41,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
       memPop.style.display = 'block';
     });
 
-
+    var back = document.getElementById('back');
+    back.addEventListener('click', function() {
+      artStuff.style.display = 'none';
+      artPop.style.display = 'none';
+      memories.style.display = 'none';
+      memPop.style.display = 'none';
+    });
 });
