@@ -112,6 +112,10 @@ section {
     border: none;
 }
 
+main > img {
+  margin-bottom: 50px;
+}
+
 footer {
     clear: both; /*break from float*/
     position: fixed;
