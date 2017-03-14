@@ -3,6 +3,8 @@
 document.addEventListener("DOMContentLoaded", function(event) {
     console.log("DOM fully loaded and parsed");
 
+    //alert("Hi there! Let me save you the trouble of figuring out what this is by telling you that this website is unfinished!");
+
     var refresh = document.getElementById('refresh');
     refresh.addEventListener('click', function() {
       location.reload();
