@@ -3,6 +3,8 @@
 document.addEventListener("DOMContentLoaded", function(event) {
     console.log("DOM fully loaded and parsed");
 
+    //alert("Hi there! Let me save you the trouble of figuring out what this is by telling you that this website is unfinished!");
+
     var refresh = document.getElementById('refresh');
     refresh.addEventListener('click', function() {
       location.reload();
@@ -39,5 +41,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
       memPop.style.display = 'block';
     });
 
-
+    var back = document.getElementById('back');
+    back.addEventListener('click', function() {
+      artStuff.style.display = 'none';
+      artPop.style.display = 'none';
+      memories.style.display = 'none';
+      memPop.style.display = 'none';
+    });
 });
