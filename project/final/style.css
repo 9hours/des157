@@ -1,29 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee|Bungee+Inline|Montserrat|Varela+Round');
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
 body {
-    font-family: consolas, helvetica, sans-serif;
+    font-family: 'Montserrat', helvetica, sans-serif;
     font-size: 12px;
     margin: auto;
 }
 
-body, a:hover {
+a:hover {
     color: #00271F;
 }
 
 body, footer {
-    width: 1050px;
-    background-color: #EAC324;
+    background-color: #ffffff;;
 }
 
+main {
+  position: relative;
+  width: 1200px;
+  height: 650px;
+  margin: auto;
+  top: 20px;
+  left: 0px;
+}
+
+section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: #ffffff;
+  overflow: hidden;
+
+  visibility: visible;
+  opacity: 1;
+  transition-property: visibility, opacity, z-index;
+  transition-duration: 1.5s;
+  transition-delay: 1s;
+}
+
+section a {
+  cursor: pointer;
+}
+
+section ul {
+  width: 1000px;
+  margin: auto;
+}
+
+section li {
+  cursor: pointer;
+  display: inline-block;
+}
+
+section li div {
+  background-color: #ffffff;
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+  border: 4px solid #f4f8ff;
+  transition: all 0.5s ease-in-out;
+}
+
+section li div:hover {
+  background-color: #ffffff;
+  border: 4px solid #cccccc;
+}
+
+section h2 {
+  color: #000000;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 80px;
+}
+
+/* LANDING PAGE */
+#enter {
+  position: absolute;
+  top: 120px;
+  width: 100%;
+  color: #ffffff;
+  font-size: 70px;
+  font-family: 'Bungee', sans-serif;
+}
+
+#msg {
+  background-color: white;
+  position: relative;
+  width: 450px;
+  top: 150px;
+  margin: auto;
+  padding: 15px 20px 30px 20px;
+  border-radius: 5px;
+
+  visibility: hidden;
+  opacity: 0;
+  transition-property: visibility, opacity;
+  transition-duration: 1s;
+  transition-delay: 0.5s;
+}
+
+#proceed {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+}
+
+#landPG {
+  z-index: 10;
+}
+
+#whiteRoom {
+  z-index: 9;
+}
+
+#stampRoom {
+  z-index: 8;
+}
+
+#artStuff {
+  z-index: 7;
+}
+
+#memories {
+  z-index: 6;
+}
+
+#quotes {
+  z-index: 5;
+}
+
+#comic {
+  z-index: 4;
+}
+
+figure {
+  position: absolute;
+}
+
+.overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 600px;
+    background-image: linear-gradient(45deg, rgba(245, 239, 40, 0.6), rgba(164, 22, 169, 0.6));
+}
+
+#landPG img {
+  width: 100%;
+  display: block;
+  margin-top: -150px;
+}
+
+div img {
+  height: 100%;
+  cursor: default;
+}
+
+/* FOOTER */
 footer {
     clear: both; /*break from float*/
     position: fixed;
-    bottom: 0px;
-    padding: 10px 0px 2px 0px;
-    height: 20px;
-    font-size:10px;
-    text-align: center;
+    top: calc(50% - 100px);
+    right: 0px;
+    padding: 15px;
+    font-size: 10px;
+    z-index: 100;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer a {
+    color: #515151;
+    text-decoration: none;
+}
+
+#refresh {
+  cursor: pointer;
+}
+
+#enter, h2, .back{
+  text-align: center;
+}
+
+#enter, h2, footer {
+  text-transform: uppercase;
 }
