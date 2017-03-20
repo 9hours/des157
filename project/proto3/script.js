@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     proceed.addEventListener('click', function(){
       landPG.style.visibility = 'hidden';
       landPG.style.opacity = '0';
+      msg.style.visibility = 'hidden';
+      msg.style.opacity = '0';
     });
 
     // OTHER PAGES
