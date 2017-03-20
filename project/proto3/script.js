@@ -62,14 +62,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
       noMem();
     });
     // art stuff back to WHITE ROOM
-    back[1].addEventListener('click', function(){
+    back[0].addEventListener('click', function(){
       yesWR();
       noSTMP();
       noAS();
       noMem();
     });
     // memories back to WHITE ROOM
-    back[2].addEventListener('click', function(){
+    back[1].addEventListener('click', function(){
       yesWR();
       noSTMP();
       noAS();

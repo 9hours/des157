@@ -22,18 +22,22 @@ body, footer {
 
 main {
   position: relative;
-  width: 100%;
-  height: 100%;
-  top: 0px;
+  width: 1200px;
+  height: 600px;
+  margin: auto;
+  top: 20px;
   left: 0px;
 }
 
 section {
   position: absolute;
   width: 100%;
-  height: 500px;
-  background-color: pink;
-  /*animation: fade 0.5s infinite;*/
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: #ffffff;
+  overflow: hidden;
+
   visibility: visible;
   opacity: 1;
   transition-property: visibility, opacity, z-index;
@@ -45,8 +49,35 @@ section a {
   cursor: pointer;
 }
 
+section ul {
+  width: 1000px;
+  margin: auto;
+}
+
 section li {
   cursor: pointer;
+  display: inline-block;
+}
+
+section li div {
+  background-color: #ffffff;
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+  border: 4px solid #f4f8ff;
+  transition: all 0.5s ease-in-out;
+}
+
+section li div:hover {
+  background-color: #ffffff;
+  border: 4px solid #cccccc;
+}
+
+section h2 {
+  color: #000000;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 80px;
 }
 
 /* LANDING PAGE */
@@ -55,13 +86,8 @@ section li {
   top: 120px;
   width: 100%;
   color: #ffffff;
-  text-align: center;
   font-size: 45px;
   font-family: 'Bungee', sans-serif;
-}
-
-#landPG {
-  z-index: 10;
 }
 
 #msg {
@@ -84,6 +110,10 @@ section li {
   position: absolute;
   bottom: 15px;
   right: 20px;
+}
+
+#landPG {
+  z-index: 10;
 }
 
 #whiteRoom {
@@ -119,14 +149,14 @@ figure {
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 100%;
+  height: 600px;
     background-image: linear-gradient(45deg, rgba(245, 239, 40, 0.6), rgba(164, 22, 169, 0.6));
 }
 
 img {
-  position: relative;
   width: 100%;
-  height: 100%;
+  display: block;
+  margin-top: -150px;
 }
 
 /* FOOTER */
@@ -137,7 +167,6 @@ footer {
     right: 0px;
     padding: 15px;
     font-size: 10px;
-    text-transform: uppercase;
     z-index: 100;
 }
 
@@ -152,4 +181,12 @@ footer a {
 
 #refresh {
   cursor: pointer;
+}
+
+#enter, h2 {
+  text-align: center;
+}
+
+#enter, h2, footer {
+  text-transform: uppercase;
 }
